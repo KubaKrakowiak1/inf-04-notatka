@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobilna.MainPage">
+
+    <VerticalStackLayout BackgroundColor="AliceBlue">
+        <Label TextColor="MediumBlue" FontSize="20">Notatki</Label>
+            <CollectionView x:Name="lista">
+           
+            </CollectionView>
+
+        <Label Text="Dodanie notatki" FontSize="60" TextColor="MediumBlue"></Label>
+        <Label Text="Tytuł notatki"></Label>
+        <Entry x:Name="tytul"></Entry>
+        <Label Text="Treść notatki"></Label>
+        <Entry x:Name="tresc"></Entry>
+        
+        <Button Clicked="Dodaj" Text="Dodaj" TextColor="MediumBlue"></Button>
+    </VerticalStackLayout>
+</ContentPage>
